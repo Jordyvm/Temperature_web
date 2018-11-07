@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Jordy</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="main">
+        <p>Current:</p>
+        <p>Max:</p>
+        <p>Min:</p>
+    </div>
+    <div class="main">
+        <p id="current"></p>
+        <p id="max"></p>
+        <p id="min"></p>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyByXpaAYSlTkZkgpwdgfJOAEdJdqh2KBSs",
+        authDomain: "temperatuur-jordy.firebaseapp.com",
+        databaseURL: "https://temperatuur-jordy.firebaseio.com",
+        projectId: "temperatuur-jordy",
+        storageBucket: "temperatuur-jordy.appspot.com",
+        messagingSenderId: "314097141215"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
